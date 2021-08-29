@@ -76,8 +76,10 @@ class _NewTransactionState extends State<NewTransaction> {
                         ? 'No Date Chosen!'
                         : 'Picked Date: ${DateFormat.yMd().format(_selectedDate)}',
                   ),
-                  FlatButton(
-                    textColor: Theme.of(context).primaryColor,
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      primary: Theme.of(context).primaryColor,
+                    ),
                     onPressed: _presentDatePicker,
                     child: Text(
                       'Choose Date',
@@ -87,12 +89,14 @@ class _NewTransactionState extends State<NewTransaction> {
                 ],
               ),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Add Transaction'),
               onPressed: _submitData,
-              color: Theme.of(context).primaryColor,
-              textColor: Theme.of(context).textTheme.button.color,
-            )
+              style: ElevatedButton.styleFrom(
+                primary: Theme.of(context).primaryColor,
+                onPrimary: Theme.of(context).textTheme.button.color,
+              ),
+            ),
           ],
         ),
       ),
