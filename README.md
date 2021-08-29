@@ -6,6 +6,10 @@ A new Flutter project to practice Flutter & Dart.
 - You can log your title, amount and date of the day you spent money.
 - It shows how much money you've spent past week.
 
+## commits
+-deprecated fix : fixed RaisedButton and FlatButton into ElevatedButton and TextButton
+/ Also fixed ThemeData.accentColor and AppBarTheme.textTheme into colorScheme, secondary and titleTextStyle
+
 ### Screenshots
 
 ![스크린샷 2021-08-24 오후 1 02 34](https://user-images.githubusercontent.com/50165633/130554353-dea2199f-0f96-4ede-a751-99d6ed0ccda2.png)
